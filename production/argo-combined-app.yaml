@@ -9,11 +9,11 @@ spec:
   project: production
   source:
     path: kustomize/overlays/production
-    repoURL: https://github.com/vfarcic/argo-combined-app
+    repoURL: https://github.com/markpanizales/argo-combined-app.git
     targetRevision: HEAD
     kustomize:
       images:
-      - vfarcic/argo-combined-app:latest
+      - markpanizales/argo-combined-app:latest
   destination:
     server: https://kubernetes.default.svc
     namespace: production
